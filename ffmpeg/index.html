@@ -10,23 +10,21 @@
         <meta name="author" content="Robert Eggleston">
       
       
-        <link rel="canonical" href="https://aerobert.net/my-cheat-sheets/">
+        <link rel="canonical" href="https://aerobert.net/my-cheat-sheets/ffmpeg/">
       
       
       
-        <link rel="next" href="example/">
       
-      
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
     
     
       
-        <title>My Cheat Sheets</title>
+        <title>FFMpeg commands - My Cheat Sheets</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
       
       
 
@@ -45,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#readme" class="md-skip">
+        <a href="#ffmpeg-commands" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="My Cheat Sheets" class="md-header__button md-logo" aria-label="My Cheat Sheets" data-md-component="logo">
+    <a href=".." title="My Cheat Sheets" class="md-header__button md-logo" aria-label="My Cheat Sheets" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Readme:
+              FFMpeg commands
             
           </span>
         </div>
@@ -187,7 +185,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="My Cheat Sheets" class="md-nav__button md-logo" aria-label="My Cheat Sheets" data-md-component="logo">
+    <a href=".." title="My Cheat Sheets" class="md-nav__button md-logo" aria-label="My Cheat Sheets" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -214,30 +212,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Readme:
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -246,50 +224,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#cheat-sheets-so-far" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cheat Sheets so far:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cheat Sheets so far:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#shell-utilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Shell utilities
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -301,7 +235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example/" class="md-nav__link">
+      <a href="../example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -341,19 +275,103 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cheat-sheets-so-far" class="md-nav__link">
+  <a href="#audio" class="md-nav__link">
     <span class="md-ellipsis">
-      Cheat Sheets so far:
+      Audio
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cheat Sheets so far:">
+    <nav class="md-nav" aria-label="Audio">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#shell-utilities" class="md-nav__link">
+  <a href="#conversions" class="md-nav__link">
     <span class="md-ellipsis">
-      Shell utilities
+      conversions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      filters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="filters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#volume-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volume filter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fading-in-and-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      fading in and out
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips-and-comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      tips and comments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cutting" class="md-nav__link">
+    <span class="md-ellipsis">
+      cutting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="cutting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      tips
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      splicing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overlaps-or-mixing" class="md-nav__link">
+    <span class="md-ellipsis">
+      overlaps or mixing
     </span>
   </a>
   
@@ -382,13 +400,88 @@
   
 
 
-<h1 id="readme">Readme:</h1>
-<p>I had trouble remembering various things, like specific functions, commands, ETC... So I decided to make a repo containing some of this info that would get hosted on Github Pages. Maybe it will work.</p>
-<h2 id="cheat-sheets-so-far">Cheat Sheets so far:</h2>
-<h4 id="shell-utilities">Shell utilities</h4>
+<h1 id="ffmpeg-commands">FFMpeg commands</h1>
+<p>My most commonly used FFMpeg commands to manipulate audio / video files.</p>
+<h2 id="audio">Audio</h2>
+<h3 id="conversions">conversions</h3>
 <ul>
-<li><a href="ffmpeg/">FFMpeg</a></li>
+<li>
+<p>.mp3 to .og
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ffmpeg<span class="w"> </span>-i<span class="w"> </span>input.mp3<span class="w"> </span>output.ogg<span class="w">  </span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>.wav to .aac
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ffmpeg<span class="w"> </span>-i<span class="w"> </span>input.wav<span class="w"> </span>-codec:a<span class="w"> </span>libfdk_aac<span class="w"> </span>-b:a<span class="w"> </span>128k<span class="w"> </span>output.aac
+</span></code></pre></div></p>
+</li>
+<li>
+<p>extract audio from .mp4 to .mp3
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ffmpeg<span class="w"> </span>-i<span class="w"> </span>input_video.mp4<span class="w"> </span>-vn<span class="w"> </span>-codec:a<span class="w"> </span>libmp3lame<span class="w"> </span>-b:a<span class="w"> </span>320k<span class="w"> </span>output.mp3
+</span></code></pre></div></p>
+</li>
 </ul>
+<h3 id="filters">filters</h3>
+<h4 id="volume-filter">Volume filter</h4>
+<ul>
+<li>
+<p>Increase volume by 10 Decibals.
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ffmpeg<span class="w"> </span>-i<span class="w"> </span>input.mp3<span class="w"> </span>-af<span class="w"> </span><span class="s2">&quot;volume=10dB&quot;</span><span class="w"> </span>output_louder.mp3
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Double volume of the audio.
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ffmpeg<span class="w"> </span>-i<span class="w"> </span>input.mp3<span class="w"> </span>-af<span class="w"> </span><span class="s2">&quot;volume=2.0&quot;</span><span class="w"> </span>output.mp3
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Reduce volume by 50%.
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ffmpeg<span class="w"> </span>-i<span class="w"> </span>input.mp3<span class="w"> </span>-af<span class="w"> </span><span class="s2">&quot;volume=0.5&quot;</span><span class="w"> </span>output.mp3
+</span></code></pre></div></p>
+</li>
+</ul>
+<h4 id="fading-in-and-out">fading in and out</h4>
+<ul>
+<li>
+<p>apply fade in over first 5 seconds
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ffmpeg<span class="w"> </span>-i<span class="w"> </span>input.mp3<span class="w"> </span>-filter:a<span class="w"> </span><span class="s2">&quot;afade=t=in:ss=0:d=5&quot;</span><span class="w"> </span>output_fade_in.mp3
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Apply fade out over last half second of 10 second audio.
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ffmpeg<span class="w"> </span>-i<span class="w"> </span>input.mp3<span class="w"> </span>-af<span class="w"> </span><span class="s2">&quot;afade=t=out:st=9.5:d=0.5&quot;</span><span class="w"> </span>output.mp3
+</span></code></pre></div></p>
+</li>
+</ul>
+<h4 id="tips-and-comments">tips and comments</h4>
+<ul>
+<li>-af is an abbriviation for -filter:a.</li>
+<li>you can chain filters together in sequence using commas.</li>
+</ul>
+<h3 id="cutting">cutting</h3>
+<ul>
+<li>
+<p>Cut out the section between 0:30 and 1:45 from input.mp3
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>ffmpeg<span class="w"> </span>-ss<span class="w"> </span><span class="m">00</span>:00:30<span class="w"> </span>-to<span class="w"> </span><span class="m">00</span>:01:45<span class="w"> </span>-i<span class="w"> </span>input.mp3<span class="w"> </span>-codec<span class="w"> </span>copy<span class="w"> </span>cut_input.mp3
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Cut out a 30 second snippate from input.mp3 starting at 1 minute
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>ffmpeg<span class="w"> </span>-ss<span class="w"> </span><span class="m">00</span>:01:00<span class="w"> </span>-t<span class="w"> </span><span class="m">00</span>:00:30<span class="w"> </span>-i<span class="w"> </span>epic_tune.mp3<span class="w"> </span>-codec<span class="w"> </span>copy<span class="w"> </span>snippet_epic_tune.mp3
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Cut out a 5 second chunk starting at 5 seconds in input.mp3, and convert it into output.wav.
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>ffmpeg<span class="w"> </span>-ss<span class="w"> </span><span class="m">00</span>:00:30<span class="w"> </span>-t<span class="w"> </span><span class="m">00</span>:00:05<span class="w"> </span>-i<span class="w"> </span>input.mp3<span class="w"> </span>output.wav
+</span></code></pre></div></p>
+</li>
+</ul>
+<h4 id="tips">tips</h4>
+<ul>
+<li>Remove -codec copy if you need to apply filters on the output, or convert to another format.</li>
+</ul>
+<h3 id="splicing">splicing</h3>
+<h3 id="overlaps-or-mixing">overlaps or mixing</h3>
 
 
 
@@ -435,10 +528,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
     
   </body>

@@ -5,4 +5,14 @@
          <lastmod>2024-02-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://aerobert.net/my-cheat-sheets/example/</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aerobert.net/my-cheat-sheets/ffmpeg/</loc>
+         <lastmod>2024-02-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
